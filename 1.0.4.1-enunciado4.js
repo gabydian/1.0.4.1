@@ -40,13 +40,13 @@ const filmes = [
         "nome": "Blade Runner: O Cacador de Androides",
         "lancamento": 1982,
         "diretores": ["Ridley Scott"],
-        "generos": ["Ficcao Cientifica"]
+        "generos": ["Ficcao Científica"]
     },
     {
         "nome": "Interstellar",
         "lancamento": 2014,
         "diretores": ["Christopher Nolan"],
-        "generos": ["Ficcao Cientifica"]
+        "generos": ["Ficcao Científica"]
     },
     {
         "nome": "O Senhor do Aneis: A Sociedade do Anel",
@@ -64,14 +64,14 @@ const filmes = [
         "nome": "Matrix",
         "lancamento": 1999,
         "diretores": ["Lana Wachowski", "Lilly Wachowski"],
-        "generos": ["Acao", "Ficcao Cientifica"]
+        "generos": ["Acao", "Ficcao Científica"]
     }
 ]
 
 function filtrar() {
 
     return filmes.filter(filme => {
-        let ehFiccaoOuAcao = filme.generos.includes('Ficcao Cientifica'||'Acao');
+        let ehFiccaoOuAcao = filme.generos.includes('Ficcao Científica'||'Acao');
         return ehFiccaoOuAcao;
     });
 }
